@@ -24,11 +24,8 @@ percentage	DECIMAL(5,2)	Indice qualité, entre 98.00 et 100.00
 ⚙️ Installation
 1️⃣ Prérequis
 
-Node.js ≥ 18
-
-npm (inclus avec Node.js)
-
-Une base de données MySQL accessible à distance
+NPM
+--> sudo apt install npm
 
 2️⃣ Installation du projet
 git clone <url_du_dépôt>
@@ -38,13 +35,26 @@ npm install
 🔧 Configuration
 
 Crée un fichier .env à la racine du projet (non versionné sur GitHub) :
+-----------------------------------------------
+# Base de données
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=motdepasse
+DB_NAME=production
 
-DB_HOST=adresse_serveur
-DB_USER=utilisateur
-DB_PASSWORD=mot_de_passe
-DB_NAME=nom_base
-WS_URL_1=wss://source1.example.com
-WS_URL_2=wss://source2.example.com
+# WebSockets source (entrantes)
+WS_SOURCE_1=ws://localhost:8081
+WS_SOURCE_2=ws://localhost:8082
+
+# WebSockets diffusion (sortantes)
+WS_OUT_1_PORT=8083
+WS_OUT_2_PORT=8084
+
+# Port API REST HTTP
+API_PORT=3000
+
+------------------------------------------------
+
 
 🗄️ Création de la table SQL
 
