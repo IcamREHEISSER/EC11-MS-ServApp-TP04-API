@@ -34,7 +34,7 @@ npm install
 
 🔧 Configuration
 
-Crée un fichier .env à la racine du projet (non versionné sur GitHub) :
+Créer un fichier .env à la racine du projet (non versionné sur GitHub) : "sudo touch .env"
 -----------------------------------------------
 
 DB_HOST=localhost
