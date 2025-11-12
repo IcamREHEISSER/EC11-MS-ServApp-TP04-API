@@ -36,21 +36,18 @@ npm install
 
 Crée un fichier .env à la racine du projet (non versionné sur GitHub) :
 -----------------------------------------------
-# Base de données
+
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=motdepasse
 DB_NAME=production
 
-# WebSockets source (entrantes)
 WS_SOURCE_1=ws://localhost:8081
 WS_SOURCE_2=ws://localhost:8082
 
-# WebSockets diffusion (sortantes)
 WS_OUT_1_PORT=8083
 WS_OUT_2_PORT=8084
 
-# Port API REST HTTP
 API_PORT=3000
 
 ------------------------------------------------
